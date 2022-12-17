@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115107564-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115107564-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta name="twitter:card" value="summary">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Nikola Mirotic - Official Website" />
+  <meta property="og:url" content="https://nikomirotic.com/" />
+  <meta property="og:image" content="https://nikomirotic.com/img/thumbshare.jpg" />
+  <meta property="og:description" content="Nikola Mirotic Hero website. All you wanted to know about the awarded NBA player." />
+
+  <title>Nikola Mirotic - Official Website</title>
+
+  <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
+
+  <meta name="description" content="Nikola Mirotic Hero website. All you wanted to know about the awarded NBA player.">
+  <meta name="author" content="Designer & Gentlemen">
+
+  <link rel="stylesheet" href="https://cdn.bootcss.com/minireset.css/0.0.2/minireset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reflex-grid@2.0.1/css/reflex.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <a href="https://www.csslight.com/website/22928/Nikola-Mirotic" title="CSS Light" style="width:84px;height:29px;position:fixed;top:50px;right:0px;z-index:99999;text-indent:-9999px;background: url(https://www.csslight.com/ribbons/small-csslight-ribbon-black-right.png) no-repeat;" target="_blank">CSS Light Web Gallery</a>
+  <div class="landscape">
+    <img src="../img/logo-whole.svg" alt="Nikola Mirotic Logo">
+    <h1>For a better experience please rotate the device</h1>
+  </div>
+
+  <div id="fullpage">
+    <div class="section hero_is_you">
+      <img src="../img/backgrounds/bg08.jpg" alt="" class="bg-image-08">
+      <div class="container">
+          <div class="contact-content">
+            <div class="center">
+            <img src="../img/logo-whole.svg" alt="Nikola Mirotic Logo" class="inner-logo">
+          </div>
+          <div class="grid center">
+            <div class="col-xs-12">
+              <p class="contact-desc">
+                  Heroes are giants. Not (just) because they are tall. But because they do giant things. And because they lift people up.
+                </p>
+
+              <h3 id="contact-main-headline"><!-- Called in js --></h3>
+              <p class="contact-desc-first">
+                Whom did you inspire, help or made happier today? did you get up? did you help someone get better or happier?
+              </p>
+
+              <p class="contact-story">
+                Send your story with pictures or video, this world needs more heroes.
+                <br/>
+                I will be awarding the best hero stories from around the world.
+              </p>
+
+              <h2 class="popup-trigger" id="contact-main-subheadline"><!-- Called in js --></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="popup contact-form inner-scroll">
+        <div class="container">
+          <div class="grid">
+            <div class="col-sm-12">
+              <div id="form-messages"></div>
+              <div class="form">
+                <img src="../img/close.png" class="close" alt="Close button">
+                <form role="form" method="post" id="ajax-contact" action="../form.php" novalidate enctype="multipart/form-data">
+                  <div class="grid">
+                    <div class="col-xs-3 center">
+
+                      <img class="circle" src="../img/circle.png" alt="Photo">
+
+                      <div class="upload">
+                        <img src="../img/upload.png" style="margin-right: 5px">
+
+                        <span>Upolad Image</span>
+                        <input onchange="readURL(this);" type="file" name="fileToUpload" id="fileToUpload"  />
+                      </div>
+                    </div>
+
+                    <div class="col-xs-9">
+                      <div class="form-item">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="name" required>
+                      </div>
+
+                      <div class="form-item">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" required>
+                      </div>
+                    </div>
+                    <div class="col-xs-6" style="padding-top: 0">
+                      <div class="form-item">
+                        <label for="country">Country</label>
+                        <input id="country" type="text" name="country" required>
+                      </div>
+                    </div>
+                    <div class="col-xs-6" style="padding-top: 0">
+                      <div class="form-item">
+                        <label for="age">Age</label>
+                        <input id="age" type="text" name="age" required>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-6" style="padding-top: 0">
+                      <div class="form-item">
+                        <label for="city">City</label>
+                        <input id="city" type="text" name="city" required>
+                      </div>
+                    </div>
+                    <div class="col-xs-6" style="padding-top: 0">
+                      <div class="form-item">
+                        <label for="storysubject">Story Headline</label>
+                        <input id="storysubject" type="text" name="storysubject" required>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12" style="padding-top: 0">
+                      <div class="form-item">
+                        <label for="story">Hero Story</label>
+                        <span class="desc">Up to 20 000 charachers</span>
+                        <textarea id="story" name="story" id="" cols="30" rows="10" required></textarea>
+                      </div>
+
+                      <div class="disclaimer">
+                        By Marking this tab, you agree to Nikomirotic.com web site <a href="terms.html" target="_blank">Privacy Policy and Terms of Use</a>
+
+                        <label>
+                          <input type='checkbox' name="disclaimer">
+                          <span></span>
+                        </label>
+                      </div>
+
+                      <div class="form-item center">
+                        <input id="submit" name="submit" type="submit" value="Send" class="button">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section moto">
+      <img src="../img/backgrounds/bg07.jpg" alt="" class="bg-image">
+      <div class="container">
+        <div class="center">
+          <img src="../img/logo-whole.svg" alt="Nikola Mirotic Logo" class="inner-logo">
+        </div>
+        <div class="grid">
+          <div class="col-md-5 col-xs-6">
+            <h3 class="moto-headline-first">
+              I Never Wanted To<br/>Be Famous.
+            </h3>
+
+            <h3 class="moto-headline-second">
+              I ALWAYS WANTED TO BE<br/>GOOD. IN BASKETBALL. IN LIFE.<br/>AND THAT IS WHAT I DO.
+            </h3>
+
+            <h2 id="moto-headline-third"><!-- Called in js --></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section proud">
+      <img src="../img/backgrounds/bg06.jpg" alt="" class="bg-image">
+      <div class="container">
+        <div class="center">
+          <img src="../img/logo-whole.svg" alt="Nikola Mirotic Logo" class="inner-logo">
+          <p id="proud-headline"> <!-- Called in js --></p>
+        </div>
+
+        <div class="inner-proud inner-scroll">
+
+            <div class="grid item-group">
+              <div class="col-md-6">
+                <div class="item-proud">
+                  <div class="grid">
+                    <div class="col-md-3">
+                      <img src="../img/kia.png" alt="Kia">
+                    </div>
+
+                    <div class="col-md-9 proud-text">
+                      Two Times Winner Kia Eastern Conference Rookie of the Month Honors for December and March
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 proud-right">
+                <div class="item-proud">
+                  <div class="grid">
+                    <div class="col-md-3">
+                      <img src="../img/allstar.png" alt="All star">
+                    </div>
+
+                    <div class="col-md-9 proud-text">
+                      Selected to the World Team at All-Star Weekend in New York, Where he finished with 16 points (6-9 FG, 4-6 3FG) and 4 rebounds in 20:36
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="grid item-group">
+              <div class="col-md-6">
+                <div class="item-proud">
+                  <div class="grid">
+                    <div class="col-md-3">
+                      <img src="../img/bulls.png" alt="Chicago bulls">
+                    </div>
+
+                    <div class="col-md-9 proud-text">
+                      Ranks 3rd all-time in the Bulls rookie record books
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 proud-right">
+                <div class="item-proud">
+                  <div class="grid">
+                    <div class="col-md-3">
+                      <img src="../img/risingstar.png" alt="Rising Star">
+                    </div>
+
+                    <div class="col-md-9 proud-text">
+                      Euroleague Rising Star Award (2010-11 and 2011-12), Which is awarded to the league’s best player under 22 years of age
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid item-group">
+              <div class="col-md-6">
+                <div class="item-proud">
+                  <div class="grid">
+                    <div class="col-md-3">
+                      <img src="../img/copa_del_rey.svg" alt="Copa Del Rey">
+                    </div>
+
+                    <div class="col-md-9 proud-text">
+                      Named to the 2012-13 All-Euroleague Second Team and named the 2014 Spanish Cup Final MVP
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 proud-right">
+                <div class="item-proud">
+                  <div class="grid">
+                    <div class="col-md-3">
+                      <img src="../img/draft.png" alt="Draft">
+                    </div>
+
+                    <div class="col-md-9 proud-text">
+                      Early-entry candidate for the 2011 NBA Draft
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid item-group">
+              <div class="col-md-6">
+                <div class="item-proud-2">
+                  <div class="grid">
+                    <div class="col-md-3">
+                      <img src="../img/nba.svg" alt="NBA" style="width:50px">
+                    </div>
+
+                    <div class="col-md-9 proud-text">
+                      Participated in Basketball Without Borders Europe Camp Turkey 2008 as well as Basketball Without Borders Europe Camp in 2007.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 proud-right">
+                <div class="item-proud-2" id="item-proud-last">
+                  <div class="grid">
+                    <div class="col-md-3">
+                      <img src="../img/honor.png" alt="Honor">
+                    </div>
+
+                    <div class="col-md-9 proud-text">
+                      The Order of Saint Sava, the highest award presented by the Serbian Orthodox Church for humanitarian work and philantrophy.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="center">
+          <p class="proud-bottom">
+            I am proud I have won them but I keep trying as if I have to win them all over again.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section stats">
+      <img src="../img/backgrounds/bg05.jpg" alt="" class="bg-image">
+      <div class="container">
+        <div class="center">
+          <img src="../img/logo-whole.svg" alt="Nikola Mirotic Logo" class="inner-logo">
+        </div>
+
+        <div class="grid">
+          <div class="col-xs-6">
+            <h3 class="stats-headline">
+              I Have Learned That No Matter<br/>
+              What Happens, You Must
+            </h3>
+            <h2 id="stats-main-headline"><!-- Called in js --></h2>
+
+            <div class="nike-img">
+              <object id="nike" type="image/svg+xml" data="../img/nike.svg"></object>
+            </div>
+          </div>
+
+          <div class="col-xs-6">
+            <div class="review-header">
+              <div class="review-inner">
+                <h2>SEASON</h2>
+                <h3>2016/2017</h3>
+                <img src="../img/review.svg" alt="Review of season 2016/2017" class="review-img">
+              </div>
+            </div>
+
+            <div class="clubs">
+              <div class="inner-clubs">
+                <img src="../img/nba.svg" alt="NBA">
+                <img src="../img/chicagobulls.svg" alt="Bulls">
+                <img src="../img/logo.svg" alt="Nikola Mirotic Logo">
+              </div>
+            </div>
+
+            <div class="last-played-games">
+              <div class="inner-games">
+                <div class="grid">
+                  <div class="col-6">
+                    <p>Game Played</p>
+                    <p>Minutes</p>
+                    <p>Points</p>
+                    <p>Field Goal</p>
+                    <p>Three Point Field Goal</p>
+                    <p>Reb</p>
+                    <p>Assistance</p>
+                    <p>Steals</p>
+                    <p>Blocked Shots</p>
+                  </div>
+
+                  <div class="col-6">
+                    <p>256</p>
+                    <p>23.5</p>
+                    <p>11.6</p>
+                    <p>0.419 %</p>
+                    <p>0.359 %</p>
+                    <p>5.5</p>
+                    <p>1.3</p>
+                    <p>0.8</p>
+                    <p>0.7</p>
+                  </div>
+                </div>
+                <a href="https://www.espn.com/nba/player/_/id/6459/nikola-mirotic" target="_blank"><div class="button">Read More</div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section basketball_path">
+      <img src="../img/backgrounds/bg04.jpg" alt="" class="bg-image">
+      <div class="container">
+        <div class="center">
+          <img src="../img/logo-whole.svg" alt="Nikola Mirotic Logo" class="inner-logo">
+        </div>
+        <div class="grid">
+          <div class="col-sm-6 col-xs-5">
+            <div class="basketball_path-headlines">
+              <h2 class="basketball_menu active">BASKETBALL PATH</h2>
+              <h2 class="instagram_menu">INSTAGRAM FEED</h2>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-xs-7">
+            <div class="basketball-path inner-scroll" id="timeline-scroll">
+              <div class="timeline">
+                 <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>The Pelicans</h2>
+                    <p>
+                      A new start gives new inspiration. I have joined the Pelicans in Nola. My number is 3. As you see, there are no coincidences :) I will continue to work on myself to get better and better. Every day.
+                    </p>
+                  </div>
+                  <div class="timeline-date">2018</div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>Saint Sava Medal</h2>
+                    <p>
+                      Medal of Saint Sava is the highest honor given by the Serbian orthodox church for charity and philanthropy. This is the most significant award that I have received in my life. It shines over all other medals. It also stands as a lighthouse reminding me that I am on the right path.
+                    </p>
+                  </div>
+                  <div class="timeline-date">2017</div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>The Olympics</h2>
+                    <p>
+                      Now imagine you go to your first Olympics in Rio and your team wins a bronze medal. This was my ultimate dream on the bucketlist, and I am still crazy proud of this achievement.
+                    </p>
+                  </div>
+                  <div class="timeline-date">2016</div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>Gold Medal in Eurobasket (France)</h2>
+                    <p>
+                      All Rookie First team (2 times) winner kia eastern Conference Rookie of the Month for December and March 2015
+                    </p>
+                  </div>
+                  <div class="timeline-date">2015</div>
+                </div>
+
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>NBA - The Bulls</h2>
+                    <p>
+                      In the summer of 2014 I decided to make the biggest step in professional career. In the second draft for Chicago Bulls I got a number 44 and a place in the best basketball league in the world.
+                    </p>
+                  </div>
+                  <div class="timeline-date">2014</div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>Champion with Real Madrid</h2>
+                    <p>
+                      Champion with Real Madrid. Endesa Supercup
+                      <br/>
+                      Champion with Real Madrid Kings Cup
+                      <br/>
+                      MVP Kings Cup
+                    </p>
+                  </div>
+                  <div class="timeline-date">2013</div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>Champion with Kings Cup</h2>
+                    <p>
+                      Euroleague Rising Star - the prize for The best young player of the Euroleague
+                      <br/>
+                      Champion with Real Madrid Supercup
+                      <br/>
+                      2012-13 Champion with Real Madrid- Endesa Supercup
+                      <br/>
+                      2012-13 Champions with Real Madrid- Liga Endesa
+                    </p>
+                  </div>
+                  <div class="timeline-date">2012</div>
+                </div>
+
+                <div class="timeline-item timeline-left">
+                  <div class="timeline-content">
+                    <h2>Signing Contract<br/>For No44</h2>
+                    <p>Chicago</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>NBA</h2>
+                    <p>
+                      As I got better with games and practice, my dreams also grew. So I got drafted to one of the historic NBA clubs - The Bulls. However I felt that wasn't the right time for me. I wanted to win more games, titles and have even more experience.
+                    </p>
+                  </div>
+                  <div class="timeline-date">2011</div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>Euroleague Rising Star</h2>
+                    <p>
+                      Euroleague Rising Star - Prize for The best young player
+                      <br/>
+                      Gold Medal with Spain in the European Under-20
+                      <br/>
+                      Member of the ideal quintet of the European U-20
+                      <br/>
+                      MVP European U-20
+                      <br/>
+                      MVP The month of December of the Euroleague
+                    </p>
+                  </div>
+                  <div class="timeline-date">2011</div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>Bronze Medal with Spain</h2>
+                    <p>
+                      Bronze Medal with Spain in the European Under-20
+                      <br/>
+                      Member Of the ideal quintet of the European U-20
+                    </p>
+                  </div>
+                  <div class="timeline-date">2010</div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>MVP</h2>
+                    <p>
+                      MVP L'Hospitalet Junior Tournament
+                      <br/>
+                      MVP Campus Basketball Without Borders
+                    </p>
+                  </div>
+                  <div class="timeline-date">2009</div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>Champion Under-20</h2>
+                    <p>
+                      Champion Under-20 Circuit
+                      <br/>
+                      MVP L'Hospitalet Junior Tournament
+                    </p>
+                  </div>
+                  <div class="timeline-date">2008</div>
+                </div>
+
+                <div class="timeline-item timeline-left">
+                  <div class="timeline-content">
+                    <h2>Start Playing For Spain National Selection</h2>
+                    <p>Real Madrid</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>Youngest Best MVP</h2>
+                    <p>
+                      With Real Madrid, we have won 5 titles, and I have gotten a flattering title of the Youngest Best MVP in History on Spain Basketball League. I have also started to play for the Spanish National Selection.
+                    </p>
+                  </div>
+                  <div class="timeline-date">2006</div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>Real Madrid</h2>
+                    <p>
+                      The hard work paid off again - Real Madrid called and I responded. This was the year my international career begun.
+                    </p>
+                  </div>
+                  <div class="timeline-date">2005</div>
+                </div>
+
+                <div class="timeline-item timeline-left">
+                  <div class="timeline-content">
+                    <h2>We Won Five Titles</h2>
+                    <p>Real Madrid</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>The First 5!</h2>
+                    <p>
+                      With hard work and practice, I made it to the first 5. Also, I have grabbed that chance and scored 20 points! Our team won. I was beyond proud. After that, no resting on the laurels was allowed- I had to put in 150% of sweat and practice.
+                    </p>
+                  </div>
+                  <div class="timeline-date">2004</div>
+                </div>
+
+                <div class="timeline-item timeline-left">
+                  <div class="timeline-content">
+                    <h2>First Game For Joker and scored 20 points</h2>
+                    <p>Podgorica</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>Joker club</h2>
+                    <p>
+                      I have scored the first goal, and you would have expected that I have fallen for soccer… However, I got completely stuck on basketball! In that same year I have joined my first basketball club Džoker (Joker) in Podgorica as a 100% rookie.
+                    </p>
+                  </div>
+                  <div class="timeline-date">2003</div>
+                </div>
+
+                <div class="timeline-item timeline-right">
+                  <div class="timeline-content">
+                    <h2>Soccer days</h2>
+                    <p>
+                      My first training was in soccer. I was fascinated by the dynamics and what a dedicated team can do. At the time, basketball was nowhere in sight.
+                    </p>
+                  </div>
+                  <div class="timeline-date">1997</div>
+                </div>
+
+                <div class="timeline-item timeline-right" id="last-timeline-item">
+                  <div class="timeline-content">
+                    <h2>The first ball</h2>
+                    <p>
+                      When I was born, I do not remember being this tall… I was just a regular baby.
+                      My first favourite place to play with the ball was at my grandparents’ house in Montenegro countryside. The unbelievable nature and freedom to move was the best time a kid like me could ever ask for.
+                    </p>
+                  </div>
+                  <div class="timeline-date">1991</div>
+                </div>
+              </div>
+            </div>
+            <div class="instagram inner-scroll center">
+              <div id="instafeed"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section hello">
+      <img src="../img/backgrounds/bg03.jpg" alt="" class="bg-image">
+      <div class="container">
+        <div class="center">
+          <img src="../img/logo-whole.svg" alt="Nikola Mirotic Logo" class="inner-logo">
+        </div>
+        <h2 id="hello-headline"><!-- Called in js --></h1>
+        <div class="grid">
+          <div class="col-md-3 col-6">
+            <div class="montengro">
+              <div class="montengro-img">
+                <object id="montenegro" type="image/svg+xml" data="../img/montenegro.svg"></object>
+              </div>
+              <div class="content">
+                <p class="first">
+                  I was born in Montenegro and I was raised to respect all the people in the world.
+                </p>
+                <br/>
+                <p class="second">
+                  People are really tall there and they love to win.
+                </p>
+                <br/>
+                <p class="third">
+                  I guess that’s why good basketball is played in Montenegro.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="football">
+              <div class="football-img">
+                <object id="football" type="image/svg+xml" data="../img/football.svg"></object>
+              </div>
+
+              <div class="content">
+                <p class="first">
+                  My first love was… you will never guess it - soccer!
+                </p>
+                <br/>
+                <p class="second">
+                  I was really tall, which was cool, but so tall that I had to switch the ball!
+                </p>
+                <br/>
+                <p class="third">
+                 The first basketball practice ended up in tears. I thought I was never gonna do this.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="basketball">
+              <div class="basketball-img">
+                <object id="basketball" type="image/svg+xml" data="../img/basketball.svg"></object>
+              </div>
+
+              <div class="content">
+                <p class="first">
+                  But that was all before I met my coach Jadran Vujacic in the basketball club Joker in Podgorica.
+                </p>
+                <br/>
+                <p class="second">
+                  It took a lot of patience and endurance to learn this game. He literally changed the way we all saw basketball and showed us the magic of playing the hoops.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="world">
+              <div class="world-img">
+                <object id="world" type="image/svg+xml" data="../img/world.svg"></object>
+              </div>
+
+              <div class="content">
+                <p class="first">
+                  Then, when I was just starting to get good at it, my family moved to Spain.
+                </p>
+                <br/>
+                <p class="second">
+                  It was hard being without my friends, my city and my hood, but Spain opened the world for me.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section hero">
+      <img src="../img/backgrounds/bg02.jpg" alt="" class="bg-image">
+      <div class="container">
+        <div class="inner-container center">
+          <img src="../img/logo-whole.svg" alt="Nikola Mirotic Logo" class="inner-logo">
+          <p class="headline">The most important words I have ever heard were from a fan who said -</p>
+          <h2 id="hero-headline"><!-- Called in js --></h2>
+          <div class="content">
+            <p class="inner-content">
+              Hero?
+              <br/><br/>
+              I was struck and humbled. What was I supposed to do?<br/>
+              How do you train to be a hero?<br/>
+              Being a hero is not a vocation.<br/>
+              That is something bigger... it’s a life’s mission.<br/><br/>
+              So I remembered my childhood heroes -<br/>
+              they were great players and great inspirations to others.<br/>
+              Can I be like them?<br/><br/>
+              I thought, to be able to continue to be someone’s hero, I have to improve myself.
+            </p>
+          </div>
+          <p id="hero-bottom"><!-- Called in js --></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section lookup active">
+      <img src="../img/backgrounds/bg01.jpg" alt="" class="bg-image">
+      <div class="container">
+        <div class="inner-container center">
+          <img src="../img/logo.svg" alt="Logo Nikola Mirotic" class="logo">
+          <h1 id="lookup-headline"><!-- Called in js --></h1>
+
+          <div class="signature">
+            <object id="signature" type="image/svg+xml" data="../img/signature.svg"></object>
+          </div>
+
+          <div class="arrow">
+            <div class="arrow-wrap center">
+              <p class="look-up-label">Scroll Up</p>
+              <a href="#intro" class="arrow-img"><img src="../img/up-arrow.svg" alt="Go to other section"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container-full">
+      <div class="grid">
+        <div class="col-xs-5" style="text-align: left">
+          © <span id="year"></span> NIKOLA MIROTIC All Rights Reserved
+        </div>
+
+        <div class="col-xs-2 hidden-xxs" style="text-align: center">
+          <a href="https://www.facebook.com/NikolaMirotic44/" target="_blank"><img src="../img/fb.svg" alt="Facebook"></a>
+          <a href="https://twitter.com/threekola" target="_blank"><img src="../img/twitter.svg" alt="Twitter"></a>
+          <a href="https://www.instagram.com/threekola/" target="_blank"><img src="../img/instagram.svg" alt="Instagram"></a>
+        </div>
+
+        <div class="col-xs-5" style="text-align: right">
+          Web Concept & Development: <a href="https://www.designerandgentleman.com/" target="_blank">Designer and Gentleman <img src="../img/dg-logo.svg" alt="Designer and Gentleman"></a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+
+
+  <script type="text/javascript">
+    var userFeed = new Instafeed({
+    get: 'user',
+    userId: '1552384556',
+    accessToken: '1552384556.386b2bc.1bac1e7ac8e942e8a0669a2cb3766e91',
+    template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
+  });
+  userFeed.run();
+</script>
+  <script src="../js/typewriter.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.3/vivus.min.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>

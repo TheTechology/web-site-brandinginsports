@@ -1,0 +1,1616 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,800");
+@import url("../fonts/Forza-Black.css");
+@import url("../fonts/Forza-Bold.css");
+@import url("../fonts/Forza-Book.css");
+@import url("../fonts/Forza-Light.css");
+@import url("../fonts/Forza-Medium.css");
+@import url("../fonts/Forza-Thin.css");
+
+:root {
+  --heading-size: 2rem;
+  --heading-size-big: 3rem;
+  --subheading-size: 1.2rem;
+  --space: 2rem;
+
+  --small-size: 0.6rem;
+
+  --brand-color: #b58509;
+  --brand-color-secondary: #999999;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+  font-family: "Forza Book", "Roboto", sans-serif;
+  font-size: 12px;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Forza Medium", "Roboto", sans-serif;
+  font-size: var(--heading-size);
+  line-height: calc(var(--heading-size) / 1);
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  margin: var(--space) 0;
+}
+
+h3 {
+  font-family: "Forza Medium", "Roboto", sans-serif;
+  font-size: var(--subheading-size);
+  font-weight: 900;
+  color: var(--brand-color-secondary);
+  line-height: 1em;
+  margin: calc(var(--space) / 3) 0;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  background: transparent;
+  color: #98999a;
+  padding: 0.5rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #98999a;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  margin-top: calc(var(--space) / 2);
+  margin-bottom: calc(var(--space) / 3);
+  object-fit: cover;
+}
+
+.close {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  text-align: right;
+  width: 20px;
+  float: right;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 3;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.form-item,
+.upload {
+  font-family: "Source Sans Pro", "Roboto", sans-serif;
+  margin-bottom: calc(var(--space) / 3);
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+/* nav */
+#fp-nav ul li .fp-tooltip.right {
+  width: auto;
+  opacity: 0.2;
+  text-transform: capitalize;
+}
+
+#fp-nav ul li:hover .fp-tooltip.right {
+  opacity: 1;
+}
+
+#fp-nav.right {
+  right: 0;
+}
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  width: 10px;
+  height: 10px;
+}
+
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+  color: var(--brand-color);
+}
+
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+  background: white;
+}
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  margin: 20px 7px;
+}
+
+#fp-nav ul li a.active span {
+  background: var(--brand-color);
+  color: var(--brand-color);
+}
+
+#fp-nav ul li .fp-tooltip.right {
+  font-size: 0.6rem;
+  top: 0px;
+}
+
+.tm {
+  font-family: "Roboto", sans-serif;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  margin-top: calc(var(--space) / 2);
+  padding: 0.3rem 1.5rem;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.button:active,
+.button:focus {
+  opacity: 1;
+  background: var(--brand-color);
+  border-color: var(--brand-color);
+  transition: 0.2s all;
+}
+
+#signature {
+  width: 130px;
+}
+
+.contact-desc,
+.contact-desc-first {
+  margin-bottom: 1rem;
+}
+
+.lang {
+  position: absolute;
+  width: 100%;
+  top: 3%;
+}
+
+.lang a {
+  font-family: "Source Sans Pro", "Roboto", sans-serif;
+  opacity: 0.4;
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
+}
+
+.lang a:hover {
+  color: white;
+  padding-bottom: 2px;
+  border-bottom: 1px solid white;
+}
+
+.lang .active {
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0.1%;
+  width: 100%;
+  font-family: "Source Sans Pro", "Roboto", sans-serif;
+  font-size: var(--small-size);
+  opacity: 0.4;
+}
+
+.footer img {
+  vertical-align: middle;
+  margin-left: 0.3rem;
+}
+
+.footer a:hover {
+  opacity: 0.8;
+}
+
+.inner-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section {
+  perspective: 800px;
+}
+
+.mobile-message {
+  display: none;
+}
+
+.popup {
+  display: none !important;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup.is-visible {
+  display: block !important;
+  opacity: 1;
+  visibility: visible;
+}
+
+.form {
+  position: relative;
+  color: #98999a;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: "Source Sans Pro", "Roboto", sans-serif;
+  text-transform: capitalize;
+}
+
+.form .desc {
+  text-align: right;
+  float: right;
+}
+
+.popup-trigger:hover {
+  color: white;
+}
+
+.popup-trigger {
+  cursor: pointer;
+}
+
+/* Section .lookup */
+
+.lookup h1 {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  height: 6rem;
+}
+
+.lookup span {
+  overflow: hidden;
+}
+
+.inner-logo {
+  position: absolute;
+  top: 4%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--space);
+}
+
+.insta-image {
+  display: inline-block;
+}
+
+.arrow {
+  height: 4rem;
+  font-size: 0.9rem;
+  margin-top: var(--space);
+  text-transform: uppercase;
+}
+
+.arrow-wrap {
+  animation: blink 1s step-start 0s infinite;
+  -webkit-animation: blink 1s step-start 0s infinite;
+  width: fit-content;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.arrow-wrap:hover {
+  animation: blink-hover 0.8s step-start 0s infinite;
+  -webkit-animation: blink-hover 0.8s step-start 0s infinite;
+}
+
+@keyframes blink-hover {
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink-hover {
+  50% {
+    opacity: 1;
+  }
+}
+
+.arrow img {
+  width: 2.5rem;
+  margin-top: calc(var(--space) / 4);
+}
+
+.arrow img:hover {
+  opacity: 0.5;
+}
+
+.signature {
+  height: 5rem;
+}
+
+/* Section .hero */
+
+.hero h2 {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  height: 6rem;
+  font-size: var(--heading-size-big);
+  line-height: var(--heading-size-big);
+  color: var(--brand-color);
+  margin: calc(var(--space) / 2) auto;
+}
+
+.hero .content {
+  height: 11.5rem;
+  margin-bottom: calc(var(--space) / 2);
+}
+
+.hero #hero-bottom {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  height: 1rem;
+  font-weight: 600;
+}
+
+/* Section .hello */
+
+.hello h2 {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  height: 6rem;
+  font-size: var(--heading-size-big);
+  line-height: var(--heading-size-big);
+  text-align: center;
+  font-style: normal;
+  text-transform: capitalize;
+  margin: calc(var(--space) / 2) auto;
+}
+
+.montengro-img,
+.football-img,
+.basketball-img,
+.world-img {
+  height: 6rem;
+  text-align: center;
+  margin: var(--space) 0;
+}
+
+.hello .content {
+  height: 8rem;
+}
+
+.montenegroSVG path {
+  stroke: #868686;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  fill: none;
+}
+
+/* Section .stats */
+
+#stats-main-headline {
+  height: 11rem;
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  font-size: var(--heading-size-big);
+  line-height: 3.5rem;
+  text-transform: uppercase;
+}
+
+.nike {
+  margin-top: var(--space);
+}
+
+.nike-img {
+  height: 4.5rem;
+}
+
+.review-header {
+  height: 7rem;
+  margin-bottom: calc(var(--space) / 3);
+}
+
+.review-header h2 {
+  font-family: "Forza Book", "Roboto", sans-serif;
+  letter-spacing: 0.3rem;
+  font-style: normal;
+  font-size: 0.9rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.review-header h3 {
+  font-size: 1.8rem;
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  color: var(--brand-color);
+  margin-top: 0;
+}
+
+.clubs img {
+  margin-right: calc(var(--space) / 3);
+  height: 3rem;
+}
+
+.clubs {
+  height: 3rem;
+  margin-bottom: calc(var(--space) / 3);
+}
+
+.last-played-games {
+  height: 12rem;
+}
+
+#bottom-played-games {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  height: 3.5rem;
+  color: var(--brand-color);
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.contact-form {
+  height: 28rem;
+  overflow: auto;
+}
+
+.last-played-games p {
+  margin-bottom: calc(var(--space) / 4);
+}
+
+.played-games-heading {
+  margin: calc(var(--space) / 2) 0;
+}
+
+.inner-games {
+  font-size: var(--small-size);
+}
+
+.inner-games .col-xs-6:first-child {
+  opacity: 0.5;
+}
+
+/* Section .proud */
+
+.inner-proud {
+  margin: var(--space);
+  height: 19rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.proud-right {
+  margin-top: var(--space);
+}
+
+.item-group {
+  /*opacity: 0;*/
+  margin-bottom: var(--space);
+}
+
+#proud-headline {
+  height: 3rem;
+}
+
+.proud-text {
+  margin-top: 1.5rem;
+}
+
+/* Section .moto */
+
+.date {
+  font-family: "Roboto", sans-serif;
+  color: var(--brand-color);
+  font-weight: 700;
+  margin-bottom: var(--space);
+}
+
+.moto-headline-first {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  font-style: italic;
+  color: var(--brand-color-secondary);
+  margin: calc(var(--space) / 3) 0;
+}
+
+.moto-headline-second {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  font-style: italic;
+  color: white;
+  margin: calc(var(--space) / 3) 0;
+}
+
+#moto-headline-third {
+  height: 9rem;
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: var(--brand-color);
+  margin: calc(var(--space) / 3) 0 0 0;
+  text-transform: uppercase;
+}
+
+.blog {
+  font-family: "Roboto", sans-serif;
+  color: var(--brand-color-secondary);
+  line-height: 1.5rem;
+}
+
+.blog h1 {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  color: var(--brand-color);
+  font-style: normal;
+  margin-bottom: calc(var(--space) / 3);
+}
+
+#blog-post {
+  height: 15rem;
+}
+
+/* Baksetball part */
+
+.basketball_path-headlines h2 {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  font-size: calc(var(--heading-size-big) * 1.2);
+  line-height: calc(var(--heading-size-big) * 1.3);
+  font-style: normal;
+  color: #4d5155;
+  margin: calc(var(--space) / 2) auto;
+}
+
+.basketball_path-headlines .active {
+  color: var(--brand-color);
+}
+
+.basketball_menu:hover,
+.instagram_menu:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.basketball-path {
+  height: 27rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.instagram {
+  height: 27rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.instagram img {
+  padding: 10px;
+}
+
+/* Contact */
+
+#contact-main-headline {
+  height: 7rem;
+}
+
+.hero_is_you {
+  text-transform: uppercase;
+  font-size: var(--small-size);
+}
+
+.hero_is_you h2 {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  color: var(--brand-color);
+}
+
+.hero_is_you h3 {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  font-size: calc(var(--heading-size-big));
+  color: white;
+  margin-top: 0;
+}
+
+.hero_is_you .visit {
+  margin-top: var(--space);
+}
+
+.hero_is_you .highlight {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  color: var(--brand-color);
+}
+
+.hero_is_you .sponsors {
+  text-transform: capitalize;
+}
+
+.hero_is_you .sponsors p {
+  width: 100%;
+}
+
+.hero_is_you .contact-headline {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  color: var(--brand-color);
+  margin-top: calc(var(--space) / 2);
+  margin-bottom: calc(var(--space) / 2);
+  font-style: italic;
+  font-size: calc(var(--small-size) + 0.2rem);
+}
+
+.sponsors-headline {
+  margin-bottom: var(--space);
+}
+
+.sponsors-img img {
+  margin-right: var(--space);
+}
+
+.upload {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.upload input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.upload:hover {
+  color: white;
+}
+
+.req {
+  float: right;
+  text-align: right;
+}
+
+.contact-form .button {
+  width: auto;
+  margin-top: 0;
+  height: auto;
+  padding: 0.2rem 2rem;
+}
+
+.bg-image {
+  position: absolute;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  z-index: -999;
+}
+
+.bg-image-08 {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  z-index: -999;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+}
+
+.srp .hero_is_you {
+  font-size: 0.8rem;
+}
+
+.srp .hero_is_you h3 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+.srp #contact-main-headline {
+  height: 9rem;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 30%;
+  margin-left: -3px;
+}
+
+.timeline-item {
+  padding: 10px 80px;
+  position: relative;
+}
+
+.timeline-left {
+  left: 0;
+  width: 100%;
+  padding: 0;
+  position: absolute;
+}
+
+.timeline-right {
+  left: 30%;
+}
+
+.timeline-right .timeline-date {
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+}
+
+.timeline-right .timeline-date {
+  left: -30px;
+}
+
+.timeline-date {
+  background: black;
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  font-size: calc(var(--heading-size-big) / 1.7);
+  color: var(--brand-color);
+  font-weight: 900;
+  font-style: normal;
+}
+
+.timeline-content {
+  position: relative;
+  width: 55%;
+}
+
+.timeline-content h2 {
+  font-size: calc(var(--heading-size-big) / 3);
+  line-height: calc(var(--heading-size-big) / 3);
+  font-style: normal;
+  margin-bottom: 0.2rem;
+}
+
+.timeline-left .timeline-content {
+  width: 20%;
+}
+
+.timeline-left .timeline-content h2 {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  font-size: calc(var(--subheading-size) / 1.6);
+  line-height: calc(var(--subheading-size) / 1.3);
+  color: var(--brand-color);
+  text-transform: capitalize;
+}
+
+.timeline-left .timeline-content p {
+  color: white;
+  text-transform: capitalize;
+  margin-top: 0.6rem;
+}
+
+.timeline-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6rem;
+  line-height: 0.7rem;
+  color: var(--brand-color-secondary);
+  text-transform: uppercase;
+}
+
+.timeline-right {
+  opacity: 0.4;
+}
+
+.timeline-item--active {
+  opacity: 1;
+}
+
+.item-proud--active {
+  opacity: 1;
+  transition: all 0.8s;
+}
+
+.number {
+  position: absolute;
+  width: 30rem;
+}
+
+.lookup .number {
+  right: 15%;
+  bottom: 15%;
+}
+
+.hero .number {
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  bottom: 15%;
+}
+
+.hello .number {
+  top: 10%;
+  right: 15%;
+}
+
+.basketball_path .number,
+.hero_is_you .number {
+  top: 20%;
+  left: 5%;
+}
+
+.stats .number {
+  left: 5%;
+  bottom: 10%;
+}
+
+.proud .number {
+  right: 15%;
+  bottom: 20%;
+}
+
+.moto .number {
+  right: 15%;
+  bottom: 10%;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1060px;
+  }
+}
+
+@media (min-width: 1500px) {
+  body,
+  .hero_is_you {
+    font-size: 1.1rem;
+  }
+
+  .contact-form {
+    height: auto;
+  }
+
+  .circle {
+    height: 150px;
+    width: 150px;
+  }
+
+  .instagram {
+    height: 32rem;
+  }
+
+  .basketball-path {
+    height: 32rem;
+  }
+
+  .container {
+    max-width: 1300px;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 1rem;
+  }
+
+  .inner-container {
+    width: 70%;
+  }
+
+  .moto-headline-first {
+    font-size: 2.7rem;
+  }
+
+  #moto-headline-third {
+    font-size: 3rem;
+    line-height: 3rem;
+    height: 6rem;
+  }
+
+  .basketball_path-headlines h2 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+
+  .timeline-left .timeline-content h2 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .timeline-left .timeline-content {
+    width: 15%;
+  }
+
+  .timeline-content p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .inner-proud {
+    height: 34rem;
+  }
+
+  .timeline-date {
+    font-size: 2.5rem;
+  }
+
+  .stats-headline {
+    font-size: 2rem;
+  }
+
+  #stats-main-headline {
+    font-size: 4rem;
+    line-height: 4rem;
+    height: 12rem;
+  }
+
+  .inner-games {
+    font-size: 1rem;
+  }
+
+  .last-played-games {
+    height: 18rem;
+  }
+
+  .clubs img,
+  .clubs {
+    height: 4rem;
+  }
+
+  #bottom-played-games {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    height: 4rem;
+  }
+
+  .timeline-content h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .timeline-right .timeline-date {
+    left: -60px;
+  }
+
+  .hero h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+    height: 8rem;
+  }
+
+  .hello h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+    height: 8rem;
+  }
+
+  .lookup h1 {
+    height: 15rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .hero .content {
+    height: 16.5rem;
+  }
+
+  .signature {
+    height: 8rem;
+  }
+
+  .signature > object {
+    width: 220px;
+  }
+
+  .arrow {
+    font-size: 1.3rem;
+  }
+
+  .arrow img {
+    width: 3rem;
+  }
+
+  .inner-logo {
+    width: 15rem;
+  }
+
+  #fp-nav ul li .fp-tooltip.right {
+    font-size: 0.8rem;
+    top: 0px;
+  }
+
+  .nike-img object {
+    width: ;
+  }
+
+  #fp-nav ul li,
+  .fp-slidesNav ul li {
+    width: 15px;
+    height: 20px;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
+
+  .footer img {
+    width: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .inner-container {
+    width: 100%;
+  }
+
+  .inner-container .logo {
+    height: 5rem;
+  }
+
+  .lookup h1 {
+    height: 4rem;
+  }
+
+  .hero h2 {
+    font-size: var(--heading-size);
+    height: 4rem;
+    line-height: 2rem;
+  }
+
+  .basketball_path-headlines h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .hello h2 {
+    font-size: var(--heading-size);
+    height: 4rem;
+    line-height: 2rem;
+  }
+
+  #stats-main-headline {
+    font-size: var(--heading-size);
+    height: 6rem;
+    line-height: 2rem;
+  }
+
+  .hello .content {
+    height: 3rem;
+  }
+
+  .hello .second,
+  .hello .third {
+    display: none !important;
+  }
+
+  .montengro-img,
+  .football-img,
+  .basketball-img,
+  .world-img {
+    width: 50px;
+    height: 3.5rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+  }
+
+  #bottom-played-games {
+    height: 2.5rem;
+  }
+
+  .display-hidden {
+    display: none;
+  }
+
+  .inner-proud {
+    height: 10rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    width: 100%;
+  }
+
+  .srp .hero_is_you h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .srp #contact-main-headline {
+    height: 7rem;
+  }
+
+  .hero h2,
+  .hello h2 {
+    height: 4rem;
+  }
+
+  .basketball_path-headlines h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .timeline-item {
+    padding: 10px 40px;
+  }
+
+  .timeline-left {
+    left: -30px;
+  }
+
+  .timeline::after {
+    left: 35%;
+  }
+
+  .timeline-date {
+    font-size: 1rem;
+    left: -11px !important;
+  }
+
+  .timeline-content h2 {
+    font-size: 0.8rem;
+  }
+
+  #blog-post {
+    height: 9rem;
+    overflow: hidden;
+    line-height: 1rem;
+  }
+
+  #contact-main-headline {
+    height: 7rem;
+  }
+
+  .moto-headline-first {
+    font-size: 1.2rem;
+  }
+
+  .moto-headline-second {
+    font-size: 1rem;
+  }
+
+  #moto-headline-third {
+    font-size: 1.5rem;
+  }
+
+  #stats-main-headline {
+    height: 6rem;
+  }
+
+  .hero_is_you h3 {
+    font-size: 2rem;
+  }
+
+  .hero_is_you p {
+    width: 100%;
+  }
+
+  #fp-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form {
+    height: 30rem;
+    overflow: auto;
+  }
+
+  .circle {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .lookup h1 {
+    height: 5.2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .signature {
+    height: 4rem;
+    width: 6rem;
+    margin: auto;
+  }
+
+  .hero .content {
+    height: 14.5rem;
+  }
+
+  #fp-nav {
+    display: none;
+  }
+
+  .basketball_path-headlines h2 {
+    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .basketball-path,
+  .instagram {
+    height: 12rem;
+  }
+
+  .hello .second,
+  .hello .third {
+    display: none !important;
+  }
+
+  .instagram_menu {
+    margin-bottom: 0 !important;
+  }
+
+  .review-header {
+    height: 3rem;
+  }
+
+  .review-header h3,
+  .review-header h2 {
+    font-size: 1rem;
+    display: inline-block;
+  }
+
+  .review-img,
+  .clubs {
+    display: none !important;
+  }
+
+  .hello h2 {
+    height: 3rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 0;
+  }
+
+  .montengro-img,
+  .football-img,
+  .basketball-img,
+  .world-img {
+    display: block;
+    width: 50px;
+    height: 3.5rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .hello .content {
+    height: 4rem;
+    text-align: center;
+  }
+
+  .blog h1 {
+    margin-top: 0;
+  }
+
+  .button {
+    padding: 0.1rem 1rem;
+    height: 1.7rem;
+    margin-top: 0.5rem;
+  }
+
+  .date {
+    margin-bottom: 0rem;
+  }
+
+  #blog-post {
+    height: 12rem;
+  }
+
+  .sponsors-img img {
+    width: 10%;
+    margin-right: 0.5rem;
+  }
+
+  .hero_is_you .visit {
+    margin-top: 1.5rem;
+  }
+
+  .stats-headline,
+  #bottom-played-games {
+    display: none !important;
+  }
+
+  .clubs img {
+    height: 2rem;
+  }
+
+  .nike-img {
+    height: 1.5rem;
+    width: 85px;
+    margin: 0 auto;
+  }
+
+  .stats {
+    text-align: center;
+  }
+
+  #stats-main-headline {
+    height: 5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0;
+  }
+
+  .clubs {
+    height: 2rem;
+  }
+
+  .arrow {
+    margin-top: 1rem;
+  }
+
+  .inner-logo {
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+
+  .footer [class^="col-"] {
+    padding-bottom: 0;
+    padding-top: 5px;
+    text-align: center !important;
+  }
+
+  .footer {
+    bottom: 2%;
+  }
+
+  .inner-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 359px) {
+  body {
+    font-size: 10px;
+  }
+
+  .contact-form {
+    height: 20rem;
+    overflow: auto;
+  }
+
+  .inner-container .logo {
+    width: 3rem;
+  }
+
+  .hero .content {
+    height: 10.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+    height: 3rem;
+    line-height: 1.5rem;
+  }
+
+  .montengro-img,
+  .football-img,
+  .basketball-img,
+  .world-img {
+    width: 40px;
+    height: 2.5rem;
+  }
+
+  .hello .content {
+    height: 3rem;
+  }
+
+  .lookup h1 {
+    height: 3.2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 0;
+  }
+
+  .basketball_path-headlines h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  #stats-main-headline {
+    display: none;
+  }
+
+  #contact-main-headline {
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .hero_is_you h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+.landscape {
+  display: block;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25%;
+}
+
+.disclaimer {
+  text-align: right;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.disclaimer a {
+  font-weight: bold;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  outline: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+}
+
+:focus {
+  outline: none;
+}
+
+label input {
+  display: none; /* <-- hide the default checkbox */
+}
+label span {
+  /* <-- style the artificial checkbox */
+  height: 16px;
+  width: 16px;
+  border: 2px solid #797979;
+  display: inline-block;
+  position: relative;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+[type="checkbox"]:checked + span:before {
+  font-family: Font Awesome\5 Free;
+  content: "\f111";
+  position: absolute;
+  color: #cc9900;
+  font-weight: 900;
+  top: 2.5px;
+  left: 2.5px;
+  font-size: 0.4rem;
+}
+
+#form-messages {
+  margin-bottom: 10px;
+  color: white;
+  text-transform: uppercase;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+#form-messages h2 {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  font-style: normal;
+  color: var(--brand-color);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.signature-contact {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.close-thankyou {
+  width: 20px;
+  cursor: pointer;
+  opacity: 0.6;
+  margin-top: 1rem;
+}
+
+.close-thankyou:hover {
+  opacity: 1;
+}
+
+.error {
+  width: 100% !important;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 10px !important;
+}
+
+.terms {
+  background: url(../img/backgrounds/bg08.jpg);
+  background-size: cover;
+  padding: 3rem 0;
+}
+
+.terms p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.terms h3 {
+  font-family: "Forza Bold", "Roboto", sans-serif;
+  color: var(--brand-color);
+}
+
+.srp .hello h2,
+.srp h1,
+h2,
+.srp .timeline-left .timeline-content h2,
+.srp .form,
+.srp .disclaimer,
+.srp .hero_is_you,
+.srp #fp-nav ul li .fp-tooltip.right,
+.srp #moto-headline-third,
+.srp #stats-main-headline,
+#hello-headline {
+  text-transform: inherit;
+}
