@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Nm Icon_02</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Nm-Icon_02" transform="translate(0.000000, 1.000000)" stroke="#FFFFFF">
+            <circle id="XMLID_466_" cx="50.6862745" cy="50" r="50"></circle>
+            <polygon id="XMLID_467_" points="36.8627451 67.745098 28.8235294 42.745098 50 27.3529412 71.2745098 42.745098 63.1372549 67.745098"></polygon>
+            <polyline id="XMLID_470_" points="62.1568627 1.56862745 50 10.3921569 37.9411765 1.56862745"></polyline>
+            <path d="M50,10.1960784 L50,27.4509804" id="XMLID_469_"></path>
+            <polyline id="XMLID_468_" points="28.8235294 42.8431373 13.627451 37.745098 9.70588235 22.0588235"></polyline>
+            <path d="M0.980392157,48.1372549 L13.627451,37.745098" id="XMLID_472_"></path>
+            <path d="M10.7843137,79.8039216 C11.0784314,79.8039216 27.8431373,80.7843137 27.8431373,80.7843137 L37.0588235,67.6470588" id="XMLID_471_"></path>
+            <path d="M34.4117647,96.9607843 L27.745098,80.8823529" id="XMLID_476_"></path>
+            <polyline id="XMLID_480_" points="71.372549 42.8431373 86.4705882 37.745098 90.6862745 20.9803922"></polyline>
+            <path d="M100.588235,49.3137255 L86.4705882,37.745098" id="XMLID_479_"></path>
+            <path d="M89.4117647,79.8039216 C89.1176471,79.8039216 72.3529412,80.7843137 72.3529412,80.7843137 L63.1372549,67.6470588" id="XMLID_478_"></path>
+            <path d="M65.6862745,96.9607843 L72.3529412,80.8823529" id="XMLID_477_"></path>
+            <polyline id="XMLID_473_" points="53.4313725 14.2156863 53.4313725 25.0980392 71.8627451 38.3333333 83.7254902 34.3137255"></polyline>
+            <polyline id="XMLID_465_" points="13.7254902 24.1176471 16.0784314 34.8039216 28.2352941 38.9215686"></polyline>
+            <polyline id="XMLID_482_" points="60.1960784 64.3137255 39.4117647 64.3137255 32.6470588 44.2156863 49.5098039 31.9607843"></polyline>
+            <polyline id="XMLID_481_" points="39.4117647 71.2745098 31.8627451 81.6666667 37.5490196 95.8823529"></polyline>
+            <polyline id="XMLID_484_" points="74.5098039 45.7843137 67.8431373 66.372549 74.3137255 76.0784314 89.2156863 75.3921569"></polyline>
+            <polyline id="XMLID_483_" points="93.4313725 25.4901961 90.4901961 36.5686275 99.2156863 43.8235294"></polyline>
+            <path d="M75.7843137,83.5294118 L70.4901961,95.5882353" id="XMLID_486_"></path>
+            <path d="M13.4313725,42.1568627 L1.37254902,52.0588235" id="XMLID_487_"></path>
+        </g>
+    </g>
+</svg>

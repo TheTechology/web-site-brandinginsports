@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="102px" viewBox="0 0 101 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Nm Icon_03</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Nm-Icon_03" transform="translate(1.000000, 1.000000)" stroke="#FFFFFF">
+            <rect id="XMLID_456_" x="0" y="0.294117647" width="98.5294118" height="62.7941176"></rect>
+            <rect id="XMLID_464_" x="4.19117647" y="3.97058824" width="90.0735294" height="55.4411765"></rect>
+            <g id="XMLID_474_" transform="translate(30.882353, 41.911765)">
+                <circle id="XMLID_461_" cx="17.7205882" cy="17.5" r="17.5"></circle>
+                <path d="M35.2205882,17.5 L0.220588235,17.5" id="XMLID_460_"></path>
+                <path d="M17.7205882,35 L17.7205882,0" id="XMLID_459_"></path>
+                <g id="XMLID_475_" transform="translate(3.676471, 5.882353)">
+                    <path d="M27.4264706,0.294117647 C27.4264706,0.294117647 14.4852941,15.6617647 0.514705882,0.294117647" id="XMLID_458_"></path>
+                    <path d="M0.588235294,22.9411765 C0.588235294,22.9411765 13.5294118,7.57352941 27.5,22.9411765" id="XMLID_457_"></path>
+                </g>
+            </g>
+            <polyline id="XMLID_422_" points="29.8529412 55.2941176 29.8529412 28.0882353 67.2794118 28.0882353 67.2794118 55.2941176"></polyline>
+            <path d="M29.8529412,77.4264706 L67.2794118,97.5" id="XMLID_453_"></path>
+            <path d="M29.8529412,90.5882353 L46.25,99.3382353" id="XMLID_452_"></path>
+            <path d="M67.2794118,78.1617647 L29.8529412,98.2352941" id="XMLID_449_"></path>
+            <path d="M29.8529412,69.7058824 L67.2794118,89.7794118" id="XMLID_454_"></path>
+            <path d="M67.2794118,70.4411765 L29.8529412,90.5147059" id="XMLID_451_"></path>
+            <g id="XMLID_450_" transform="translate(29.411765, 61.029412)">
+                <path d="M0.441176471,0.220588235 L37.8676471,20.3676471" id="XMLID_463_"></path>
+                <path d="M37.8676471,0.220588235 L0.441176471,20.3676471" id="XMLID_462_"></path>
+            </g>
+            <path d="M67.2794118,90.5882353 L50.5882353,99.5588235" id="XMLID_448_"></path>
+        </g>
+    </g>
+</svg>
